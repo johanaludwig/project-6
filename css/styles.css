@@ -14,7 +14,7 @@
   --color-keys-light: #e3f2f3;
   --font-size-large: 60px;
   --font-size-medium: 20px;
-  --transition: all .2s ease-in-out;
+  --transition: all .5s ease-in-out;
 }
 
 /* main */
@@ -33,6 +33,7 @@ body {
 li, ol, ul {
   padding: 0;
   display: inline-block;
+  line-height: 1.6;
 }
 
 h2 {
@@ -54,6 +55,10 @@ button {
   -webkit-transition: var(--transition);
   -o-transition: var(--transition);
   transition: var(--transition);
+}
+
+button:hover {
+  border: 3px solid #48DCDC;
 }
 
 .main-container {
@@ -89,6 +94,7 @@ button {
   color: transparent;
   background: #FFFFFF;
   border-radius: 5px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .space {
@@ -97,7 +103,7 @@ button {
 
 .show {
   color: #000;
-  background-color: var(--color-secondary);
+  background-image: radial-gradient(circle, #f9fbfe, #e9f4fd, #d7eff9, #c2eaf2, #b0e5e5);  font-size: var(--font-size-medium);
   font-size: var(--font-size-medium);
   -webkit-transition: var(--transition);
   -o-transition: var(--transition);
@@ -171,6 +177,8 @@ button {
 
 .win a {
   color: var(--color-win);
+  font-family: 'Open Sans', sans-serif;
+
 }
 
 .lose {
@@ -179,6 +187,8 @@ button {
 
 .lose a {
   color: var(--color-lose);
+  font-family: 'Open Sans', sans-serif;
+
 }
 
 /* icon */
