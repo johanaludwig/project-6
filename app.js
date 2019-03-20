@@ -23,7 +23,11 @@ let phrases = [
 ];
 
 
-// Random Phrase Function
+/* 
+Randomly choose a phrase from the phrases array, 
+split phrase into new array of characters, 
+return the new character array.
+*/
 getRandomPhrase = (array) => {
     let randomPhrase = array[Math.floor(Math.random() * array.length)];
     return randomPhrase.split('');
@@ -32,7 +36,11 @@ getRandomPhrase = (array) => {
 const phraseArray = getRandomPhrase(phrases);
 
 
-// Adding Phrase to the Display
+/* Add Phrase to the Display.
+Loops through an array of characters,
+create a list item, put the character inside of the list item, 
+and append it to the html
+*/
 addPhraseToDisplay = (array) => {
 
     for (let i = 0; i < array.length ; i ++ ) {
@@ -54,8 +62,10 @@ addPhraseToDisplay = (array) => {
 
 addPhraseToDisplay(phraseArray);
 
-// Button checked 
-// change all elements with class 'letter'
+/* Button checked 
+Loop over the letters and check if they match the letter in the button the player has chosen
+If there’s a match, the function add the “show” class to the list item containing that letter
+*/
 checkLetter = (button) => {
     let letterCheck = null;
 
@@ -70,7 +80,7 @@ checkLetter = (button) => {
     return letterCheck;
 }
 
-//Check win or lost
+/* Check whether the game has been won or lost */
 checkWin = () => {
 
     if (letters.length === shown.length) {
@@ -89,7 +99,10 @@ checkWin = () => {
     }
 }
 
-
+/* 
+Event delegation to listen only to button events from the keyboard.
+and remove one of the tries from the scoreboard.
+*/
 qwerty.addEventListener('click', (event) => {
     let guess = event.target.textContent;
 
