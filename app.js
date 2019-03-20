@@ -63,7 +63,7 @@ addPhraseToDisplay = (array) => {
 addPhraseToDisplay(phraseArray);
 
 /* Button checked 
-Loop over the letters and check if they match the letter in the button the player has chosen
+Loops over the letters and check if they match the letter in the button the player has chosen
 If there’s a match, the function add the “show” class to the list item containing that letter
 */
 checkLetter = (button) => {
