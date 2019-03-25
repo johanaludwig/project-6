@@ -7,3 +7,6 @@ Project 6 - Game Show App: a word guessing game
 * A player can keep choosing letters until they make five incorrect guesses. 
 * Letters guessed correctly will appear in the phrase. 
 * Letters guessed incorrectly will be counted at the bottom of the screen.
+
+![Game Show App](/img/screen-1.png)
+![A word guessing game](/img/screen-2.png)
